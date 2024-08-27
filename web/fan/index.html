@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heran Remote Controller</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="remote">
+      <div class="buttons">
+        <div class="button" onclick="send('8C')">
+          <i class="fas fa-lightbulb" aria-hidden="true"></i>
+        </div>
+        <div class="button power" onclick="send('88')">
+          <i class="fal fa-power-off" aria-hidden="true"></i>
+        </div>
+        <div class="label light">燈光</div>
+        <div class="label power">電源</div>
+      </div>
+      <div class="buttons wind styled-div">
+        <div class="button" onclick="send('87')">
+          <center class="wind">弱<br />–</center>
+        </div>
+        <div class="button" onclick="send('86')">
+          <center class="wind">強<br />+</center>
+        </div>
+        <div class="label wind">風量</div>
+      </div>
+      <div class="buttons">
+        <div class="button" onclick="send('9C')">
+          <center>
+            <i class="fas fa-clock" aria-hidden="true"></i><br />OFF
+          </center>
+        </div>
+        <div class="button" onclick="send('95')">
+          <center>
+            <i class="fal fa-clock" aria-hidden="true"></i><br />ON
+          </center>
+        </div>
+        <div class="label planshut">定時關機</div>
+        <div class="label planopen">預約開機</div>
+      </div>
+      <div class="buttons">
+        <div class="button" onclick="send('83')">
+          <i class="fas fa-trees" aria-hidden="true"></i>
+        </div>
+        <div class="button" onclick="send('85')">
+          <i
+            class="fas fa-redo"
+            aria-hidden="true"
+            style="transform: rotate(90deg) rotateY(180deg)"
+          ></i>
+        </div>
+        <div class="label light">模式</div>
+        <div class="label power">擺頭</div>
+      </div>
+    </div>
+  </body>
+</html>

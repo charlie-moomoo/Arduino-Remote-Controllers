@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samsung Remote Controller</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="remote">
+      <div class="buttons">
+        <div class="button power" onclick="send('E6')">
+          <i class="fal fa-power-off" aria-hidden="true"></i>
+        </div>
+        <div class="button filler"></div>
+        <div class="button filler"></div>
+      </div>
+      <div class="buttons">
+        <div class="button one" onclick="send('0')">
+          <div class="color-dots">
+            <div class="dot" style="background-color: #ff4136"></div>
+            <div class="dot" style="background-color: #2ecc40"></div>
+            <div class="dot" style="background-color: #ffdc00"></div>
+            <div class="dot" style="background-color: #0074d9">
+              <div style="margin-left: -4.5mm; margin-top: 1mm">123</div>
+            </div>
+          </div>
+        </div>
+        <div class="button two" onclick="send('0')">
+          <i class="fal fa-microphone" aria-hidden="true"></i>
+        </div>
+        <div class="button three" onclick="send('28')">
+          <i class="fal fa-image" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <div class="wheel">
+        <div class="wheelways up" onclick="send('60')"></div>
+        <div class="wheelways down" onclick="send('61')"></div>
+        <div class="wheelways left" onclick="send('65')"></div>
+        <div class="wheelways right" onclick="send('62')"></div>
+        <div class="wheel-inner" onclick="send('68')"></div>
+      </div>
+      <div class="buttons">
+        <div class="button out" onclick="send('58')">
+          <i class="fal fa-undo" aria-hidden="true"></i>
+        </div>
+        <div class="button in" onclick="send('79')">
+          <i class="fal fa-home" aria-hidden="true"></i>
+        </div>
+        <div class="button out" onclick="send('B9')">
+          <i class="fal fa-pause" aria-hidden="true"></i>
+        </div>
+      </div>
+      <table>
+        <tr>
+          <td class="barleft">
+            <div
+              class="bar left"
+              onmouseenter="detectWay(1)"
+              onclick="send('F')"
+              onmousedown="detectWay(1)"
+            ></div>
+          </td>
+          <td class="barright">
+            <div
+              class="bar right"
+              onmouseenter="detectWay(2)"
+              onclick="send('6B')"
+              onmousedown="detectWay(2)"
+            ></div>
+          </td>
+        </tr>
+      </table>
+      <div class="buttons">
+        <div class="button apps" onclick="send('0')">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+            width="90%"
+            style="filter: grayscale(100%) brightness(650%)"
+          />
+        </div>
+        <div class="button apps" onclick="send('0')">
+          <img
+            src="prime.svg"
+            width="70%"
+            style="filter: grayscale(100%) brightness(650%)"
+          />
+        </div>
+        <div class="button apps" onclick="send('0')">www</div>
+      </div>
+      <div class="brand">
+        <center>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/archive/2/24/20210930181848%21Samsung_Logo.svg"
+            width="60%"
+            style="filter: grayscale(100%) brightness(650%)"
+          />
+        </center>
+      </div>
+    </div>
+  </body>
+</html>

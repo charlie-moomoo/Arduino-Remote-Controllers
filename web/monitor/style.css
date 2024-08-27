@@ -1,0 +1,228 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100dvh;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  position: relative;
+  overscroll-behavior-y: contain;
+  overflow-y: hidden;
+}
+.remote {
+  width: 3cm;
+  height: 17cm;
+  background-color: #333;
+  border-radius: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+div {
+  user-select: none;
+}
+i {
+  font-size: x-large;
+  font-weight: light;
+}
+.power {
+  background-color: #444;
+  color: #ff4136 !important;
+  left: 5px;
+  top: 5px;
+}
+.wheel {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.wheel-inner {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #333;
+  cursor: pointer;
+}
+
+.color-dots {
+  display: flex;
+  gap: 2px;
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  margin-top: -1.5mm;
+}
+
+.volume {
+  width: 40px;
+  height: 80px;
+  background-color: #444;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.volume-button {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+}
+
+.buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.filler {
+  visibility: hidden;
+}
+
+/* Hover effects */
+.button:hover {
+  background-color: #555;
+}
+
+.power:hover {
+  background-color: #ff4136;
+}
+
+.wheel:hover {
+  background-color: #555;
+}
+
+.button:hover {
+  background-color: #555;
+}
+.one,
+.three {
+  margin-top: 8mm;
+}
+.two {
+  margin-top: 2mm;
+}
+.out {
+  margin-top: -2mm;
+}
+.in {
+  margin-top: 2mm;
+}
+.bar {
+  height: 3mm;
+  background-color: #ccc;
+  margin-top: 3.5mm;
+  width: 16mm;
+  display: block;
+}
+.bar.left {
+  border-top-left-radius: 5mm;
+  border-bottom-left-radius: 5mm;
+}
+.bar.left::before {
+  content: "+";
+  font-size: 8mm;
+  color: white;
+  margin-left: 2mm;
+  margin-top: -8mm;
+  position: fixed;
+}
+.bar.left::after {
+  content: "–";
+  font-size: 8mm;
+  color: white;
+  margin-left: 2.3mm;
+  position: fixed;
+}
+.bar.right {
+  border-top-right-radius: 5mm;
+  border-bottom-right-radius: 5mm;
+}
+.bar.right::before {
+  content: "";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 300;
+  font-size: 8mm;
+  color: white;
+  margin-left: 10mm;
+  margin-top: -8mm;
+  position: fixed;
+}
+.bar.right::after {
+  content: "";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 300;
+  font-size: 8mm;
+  color: white;
+  margin-left: 9.9mm;
+  margin-top: 1mm;
+  position: fixed;
+}
+.apps {
+  margin-top: 3mm;
+}
+.brand {
+  color: white;
+  margin-top: 5cm;
+  font-size: 3.8mm;
+}
+td.barleft {
+  padding-right: 0px;
+}
+td.barright {
+  padding-left: 0px;
+}
+.wheelways {
+  opacity: 1;
+  width: 8mm;
+  height: 8mm;
+  position: fixed;
+}
+.wheelways.up {
+  margin-top: -2.5cm;
+}
+.wheelways.down {
+  margin-bottom: -2.5cm;
+}
+.wheelways.left {
+  margin-left: -2.5cm;
+}
+.wheelways.right {
+  margin-right: -2.5cm;
+}
