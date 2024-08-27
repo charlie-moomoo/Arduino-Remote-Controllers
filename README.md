@@ -11,13 +11,14 @@ This project uses Arduino and infrared transmitter to control devices. It also h
 
 1. `git clone` this repo
 2. `cd` into this repo
-3. Make a file named `.env` and enter the following:
+3. Upload `arduino/arduino.ino` code into your Arduino
+4. Make a file named `.env` and enter the following:
 
 ```env
 COM="" # Your COM port path, example: \\.\COM5
 ```
 
-4. `npm i`
-5. `node .` and go to https://localhost:8084
+5. `npm i`
+6. `node .` and go to https://localhost:8084
 
 Now choose a controller to use and control your devices!
